@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Hábitos Saludables - Registro de Sueño</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Sueño</h1>
+        <div class="sleep-input">
+            <label for="sleep-start">Introducir hora de dormir:</label>
+            <input type="time" id="sleep-start">
+            <label for="sleep-end">Introducir hora de despertar:</label>
+            <input type="time" id="sleep-end">
+            <button id="record-sleep">Registrar Sueño</button>
+        </div>
+        <div class="sleep-history">
+            <h2>Historial de Sueño</h2> <div class="data-list">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </div>
+        </div>
+        <div class="sleep-chart">
+            <div class="chart-placeholder">Gráfico de Sueño</div>
+        </div>
+        <a href="dashboard.html" class="btn-secondary">Volver al Dashboard</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Hábitos Saludables - Registro de Alimentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Alimentación</h1>
+        <div class="food-input">
+            <label for="food-type">Tipos de Comida:</label>
+            <select id="food-type">
+                <option value="desayuno">Desayuno</option>
+                <option value="almuerzo">Almuerzo</option>
+                <option value="cena">Cena</option>
+                <option value="postre">Postre</option>
+                <option value="snack">Snack</option>
+            </select>
+            <label for="food-search">Buscar:</label>
+            <input type="text" id="food-search" placeholder="Ingresar alimento...">
+            <button id="search-button">Ingresar</button>
+        </div>
+        <div class="food-history">
+            <h2>Historial de Comidas</h2>
+            <div class="data-list">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </div>
+        </div>
+        <a href="dashboard.html" class="btn-secondary">Volver al Dashboard</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

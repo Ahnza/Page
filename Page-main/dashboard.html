@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Hábitos Saludables - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bienvenido al Dashboard</h1>
+        <div class="dashboard-grid">
+            <div class="dashboard-item">
+                <h2>Sueño</h2>
+                <div class="form-group">
+                    <label for="sleep-dashboard-hours">Horas de Sueño:</label>
+                    <input type="number" id="sleep-dashboard-hours" placeholder="Ej: 8" min="0" step="0.1">
+                </div>
+                <button id="record-sleep-dashboard" class="btn-primary">Registrar Sueño</button>
+                <div class="data-list" id="sleep-summary-dashboard">
+                    <div>No hay registros aún.</div>
+                </div>
+                <a href="sleep.html" class="btn-secondary">Ver Historial de Sueño</a>
+            </div>
+            <div class="dashboard-item chart">
+                <div class="chart-placeholder"</div>
+            </div>
+            <div class="dashboard-item">
+                <h2>Pasos</h2>
+                <div class="form-group">
+                    <label for="steps-dashboard-input">Número de Pasos:</label>
+                    <input type="number" id="steps-dashboard-input" placeholder="Ej: 10000" min="0">
+                </div>
+                <button id="record-steps-dashboard" class="btn-primary">Registrar Pasos</button>
+                <div class="data-list" id="steps-summary-dashboard">
+                    <div>No hay registros aún.</div>
+                </div>
+            </div>
+            <div class="dashboard-item chart pie-chart">
+                <div class="chart-placeholder"</div>
+            </div>
+            <div class="dashboard-item">
+                <h2>Calorías</h2>
+                <div class="form-group">
+                    <label for="calories-dashboard-input">Calorías Consumidas:</label>
+                    <input type="number" id="calories-dashboard-input" placeholder="Ej: 2000" min="0">
+                </div>
+                <button id="record-calories-dashboard" class="btn-primary">Registrar Calorías</button>
+                <div class="data-list" id="calories-summary-dashboard">
+                    <div>No hay registros aún.</div>
+                </div>
+            </div>
+            <div class="dashboard-item chart bar-chart">
+                <div class="chart-placeholder"</div>
+            </div>
+        </div>
+        <div class="dashboard-menu">
+            <a href="food.html" class="btn-primary">Registrar Alimentación</a>
+            <a href="activity.html" class="btn-primary">Registrar Actividad Física</a>
+            <a href="sleep.html" class="btn-primary">Registrar Sueño</a>
+            <a href="profile.html" class="btn-primary">Ver Perfil</a> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

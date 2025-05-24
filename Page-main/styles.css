@@ -1,0 +1,339 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; /* Roboto es una fuente moderna y legible */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0; /* Un verde muy pálido, como fondo base saludable */
+    color: #333; /* Color de texto principal oscuro para contraste */
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%; /* Un poco más de ancho para una sensación más espaciosa */
+    margin: 20px auto; /* Más margen superior e inferior */
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffffff; /* Contenedor principal blanco para limpieza */
+    border-radius: 10px; /* Bordes redondeados para suavidad */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2E8B57; /* Verde mar medio, un color saludable y energizante */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente más grande para el título principal */
+}
+
+h2 {
+    font-size: 1.8em; /* Tamaño de fuente para subtítulos */
+    border-bottom: 2px solid #AED581; /* Subrayado sutil con verde claro */
+    padding-bottom: 10px;
+    margin-top: 30px; /* Más espacio sobre los H2 */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre campos de formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Espacio entre etiqueta e input */
+    color: #555; /* Color de etiqueta ligeramente más suave */
+    font-weight: bold; /* Hacer etiquetas en negrita */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="time"],
+select { /* Estilo añadido para select */
+    width: 100%;
+    padding: 12px; /* Padding más generoso */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 6px; /* Bordes más redondeados */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Transición suave para el foco */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="time"]:focus,
+select:focus { /* Estilo de foco */
+    border-color: #4CAF50; /* Verde brillante al enfocar */
+    outline: none; /* Quitar el outline por defecto */
+}
+
+.dashboard-menu {
+    text-align: center; /* Centrar los botones del menú del dashboard */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* Separador */
+}
+
+.dashboard-menu a {
+    margin: 0 10px 10px 10px; /* Espacio entre los botones del menú */
+}
+
+button,
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+    padding: 12px 20px; /* Padding más generoso */
+    border: none;
+    border-radius: 25px; /* Botones más redondeados estilo "píldora" */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold; /* Texto del botón en negrita */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para botones */
+}
+
+button:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-danger:hover {
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Botones Primarios (acciones principales) */
+.btn-primary {
+    background-color: #4CAF50; /* Verde brillante y motivador */
+    color: white;
+    width: auto; /* Ancho automático basado en el contenido, a menos que sea necesario el 100% */
+}
+
+.btn-primary:hover {
+    background-color: #388E3C; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Estilos específicos para botones con width:100% si es necesario */
+#login-form button[type="submit"],
+#register-form button[type="submit"],
+.profile-details button,
+.change-password button[type="submit"] {
+    width: 100%;
+    margin-top: 10px; /* Espacio superior para botones de formulario */
+}
+
+
+/* Botones Secundarios (acciones alternativas o de navegación) */
+.btn-secondary {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Botones de Peligro (acciones destructivas) */
+.btn-danger {
+    background-color: #ff6347; /* Rojo tomate, menos agresivo que el rojo puro */
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e55337; /* Rojo más oscuro */
+}
+
+.data-list {
+    border: 1px solid #e0e0e0; /* Borde más suave */
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #f9f9f9; /* Fondo ligeramente diferente para la lista */
+}
+
+.data-list div {
+    padding: 8px 0; /* Espacio entre ítems de la lista */
+    border-bottom: 1px dashed #eee; /* Separador sutil entre ítems */
+    color: #444; /* Color de texto para los ítems */
+}
+
+.data-list div:last-child {
+    border-bottom: none; /* Sin borde para el último ítem */
+}
+
+/* Estilos para la página de Inicio de Sesión y Registro */
+.login-container,
+.register-container {
+    background-color: #ffffff;
+    padding: 30px; /* Más padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.register-container p {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio antes del botón de registrarse */
+}
+
+#forgot-password {
+    display: block; /* Hacer que el enlace ocupe su propia línea */
+    text-align: center;
+    margin-top: 15px;
+    color: #007bff; /* Azul para el enlace */
+    text-decoration: none;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del Dashboard */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsivo */
+    gap: 20px; /* Espacio entre los items del dashboard */
+    margin-top: 20px;
+}
+
+.dashboard-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column; /* Organizar contenido verticalmente */
+}
+
+.dashboard-item h2 {
+    margin-top: 0; /* Quitar margen superior del h2 dentro del item */
+    color: #36A2EB; /* Azul para los títulos de las secciones del dashboard */
+    font-size: 1.5em; /* Ajustar tamaño de los títulos de items */
+}
+
+.dashboard-item .form-group {
+    margin-bottom: 15px; /* Espacio consistente */
+}
+
+.dashboard-item .btn-primary { /* Botones dentro de los items del dashboard */
+    width: 100%; /* Botones de registro ocupan todo el ancho */
+    margin-top: auto; /* Empujar el botón de "Ver Historial" hacia abajo si hay uno */
+}
+.dashboard-item .btn-secondary { /* Botones secundarios dentro de items */
+    margin-top: 10px; /* Espacio sobre "Ver Historial" */
+    width: 100%;
+    background-color: #FF9F40; /* Naranja para acciones secundarias destacadas */
+}
+.dashboard-item .btn-secondary:hover {
+    background-color: #F08C2C;
+}
+
+.chart-placeholder {
+    background-color: #e9ecef; /* Fondo para los placeholders de gráficos */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; /* Altura mínima para los gráficos */
+    color: #6c757d; /* Color de texto para el placeholder */
+    font-style: italic;
+}
+
+/* Estilos para la página de Perfil */
+.profile-info {
+    display: flex;
+    align-items: flex-start; /* Alinear items al inicio */
+    gap: 30px; /* Espacio entre foto y detalles */
+    margin-bottom: 30px;
+}
+
+.profile-photo img {
+    width: 150px; /* Tamaño de la foto de perfil */
+    height: 150px;
+    border-radius: 50%; /* Foto redonda */
+    object-fit: cover; /* Para que la imagen se ajuste bien */
+    border: 3px solid #AED581; /* Borde verde claro */
+}
+
+.profile-details {
+    flex-grow: 1; /* Para que ocupe el espacio restante */
+}
+
+.change-password,
+.delete-account {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* Separador */
+}
+
+/* Estilos para inputs deshabilitados en perfil */
+input:disabled {
+    background-color: #e9ecef; /* Fondo gris claro */
+    color: #6c757d; /* Texto más tenue */
+    cursor: not-allowed; /* Cursor de no permitido */
+}
+
+/* Estilos para páginas de registro de datos (Comida, Actividad, Sueño) */
+.food-input,
+.activity-input,
+.sleep-input {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.food-input select, .food-input input[type="text"],
+.activity-input select, .activity-input input[type="text"],
+.sleep-input input[type="time"] {
+    margin-bottom: 10px; /* Espacio debajo de los inputs en estas secciones */
+}
+
+.food-input button,
+.activity-input button,
+.sleep-input button {
+    width: 100%; /* Botones de ingreso/registro ocupan todo el ancho */
+    background-color: #5cb85c; /* Verde para acciones de registro */
+}
+
+.food-input button:hover,
+.activity-input button:hover,
+.sleep-input button:hover {
+    background-color: #4cae4c;
+}
+
+.food-history h2,
+.activity-history h2,
+.sleep-history h2 {
+    margin-top: 30px; /* Espacio sobre los historiales */
+}
+
+.sleep-chart {
+    margin-top: 30px;
+}
+
+/* Mejoras responsivas básicas */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .profile-info {
+        flex-direction: column; /* Apilar foto y detalles en móviles */
+        align-items: center;
+        text-align: center;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+}
